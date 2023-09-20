@@ -10,10 +10,13 @@ VueJS
   <li>Student Sign-In 2 (Vue 3: Options API)</li>
   <li>Would You Rather 1 (Vue 3: Options API)</li>
   <li>Would You Rather 2 (Vue 3: Options API)</li>
-  <li>Lab 10 repository: Student Sign-In 1 (Vue 2)</li>
-  <li>Lab 10 repository: Student Sign-In 2 (Vue 2)</li>
-  <li>Lab 10 repository: Would You Rather 1 (Vue 2)</li>
-  <li>Lab 10 repository: Would You Rather 2 (Vue 2)</li>
+  <li>Lab 10 repository: </li>
+    <ul>
+      <li>Student Sign-In 1 (Vue 2)</li>
+      <li>Student Sign-In 2 (Vue 2)</li>
+      <li>Would You Rather 1 (Vue 2)</li>
+      <li>Would You Rather 2 (Vue 2)</li>
+    </ul>
 </ul>
 
 <a href="https://myverdict.github.io/week11-web-programming-vue/index.html">
