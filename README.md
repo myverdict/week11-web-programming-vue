@@ -6,10 +6,10 @@ VueJS
 <h2>Week 11 Labs: VueJS</h2>
 
 <ul>
-  <li>Student Sign-In 1 (Vue 3 Options API)</li>
-  <li>Student Sign-In 2 (Vue 3 Options API)</li>
-  <li>Would You Rather 1 (Vue 3 Options API)</li>
-  <li>Would You Rather 2 (Vue 3 Options API)</li>
+  <li>Student Sign-In 1 (Vue 3: Options API)</li>
+  <li>Student Sign-In 2 (Vue 3: Options API)</li>
+  <li>Would You Rather 1 (Vue 3: Options API)</li>
+  <li>Would You Rather 2 (Vue 3: Options API)</li>
   <li>Lab 10 repository: Student Sign-In 1 (Vue 2)</li>
   <li>Lab 10 repository: Student Sign-In 2 (Vue 2)</li>
   <li>Lab 10 repository: Would You Rather 1 (Vue 2)</li>
