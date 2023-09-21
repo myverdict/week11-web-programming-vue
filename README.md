@@ -21,7 +21,7 @@ VueJS
 </ul>
 
 <a href="https://myverdict.github.io/week11-web-programming-vue/index.html">
-  Click here to view live!
+  Click here to view more!
 </a>
 
 <hr />
