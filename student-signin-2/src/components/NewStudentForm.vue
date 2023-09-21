@@ -32,12 +32,16 @@
         />
       </div>
 
+      <br />
+
       <div class="form-group">
         <label for="starID">Star ID</label>
 
         <!-- v-model newStarID -->
         <input id="starID" class="form-control" v-model.trim="newStarID" />
       </div>
+
+      <br />
 
       <!-- v-on:click event handler -->
       <!-- <button class="btn btn-primary" @click="addStudent">Add</button> -->
