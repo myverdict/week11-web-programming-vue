@@ -19,7 +19,12 @@
 
       <div class="form-group">
         <label for="name">Name</label>
-        <input id="name" class="form-control" v-model.trim="newStudentName" />
+        <input
+          id="name"
+          class="form-control"
+          v-model.trim="newStudentName"
+          autocomplete="name"
+        />
       </div>
 
       <div class="form-group">
