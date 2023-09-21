@@ -1,5 +1,5 @@
 {
-  "name": "student-signin-1",
+  "name": "would-you-rather-1",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.3.4",
+    "@vitejs/plugin-vue-jsx": "^3.0.2",
     "vite": "^4.4.9"
   }
 }
