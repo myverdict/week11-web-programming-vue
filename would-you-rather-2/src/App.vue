@@ -64,7 +64,7 @@ export default {
   },
   methods: {
     answerChanged(choice, id) {
-      this.$set(this.userChoice, id, choice);
+      this.userChoice[id] = choice;
     },
   },
 };
