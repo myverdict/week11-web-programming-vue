@@ -4,7 +4,7 @@ VueJS
 
 <h1>WEB PROGRAMMING</h1>
 
-<h2>Week 11 Labs: VueJS</h2>
+<h2>Week 11 Labs: Vue Components</h2>
 
 <ul>
   <li>JS Practice: </li>
