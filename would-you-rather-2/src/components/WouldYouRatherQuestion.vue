@@ -2,31 +2,25 @@
 
 <template>
   <div class="wyr">
-    <h2>Please make your choice!</h2>
-
-    <!-- Would you rather question -->
+    <h2>Would you rather...</h2>
     <h3>{{ question }}</h3>
 
-    <div id="ans">
-      <!-- radio buttons for the answers -->
-      <input
-        type="radio"
-        id="answer-one"
-        v-model="choice"
-        v-bind:value="answer1"
-        v-on:change="choiceMade"
-      />
-      <label for="answer-one">{{ answer1 }}</label>
+    <!-- creating radio buttons for the answers -->
+    <input
+      type="radio"
+      v-model="choice"
+      v-bind:value="answer1"
+      v-on:change="choiceMade"
+    />
+    <label>{{ answer1 }}</label>
 
-      <input
-        type="radio"
-        id="answer-two"
-        v-model="choice"
-        v-bind:value="answer2"
-        v-on:change="choiceMade"
-      />
-      <label for="answer-two">{{ answer2 }}</label>
-    </div>
+    <input
+      type="radio"
+      v-model="choice"
+      v-bind:value="answer2"
+      v-on:change="choiceMade"
+    />
+    <label>{{ answer2 }}</label>
   </div>
 </template>
 
@@ -34,6 +28,7 @@
 export default {
   // The App.vue parent will provide these values here (never modify a prop in a component)
   props: {
+    id: Number,
     question: String,
     answer1: String,
     answer2: String,
