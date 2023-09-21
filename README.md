@@ -1,10 +1,10 @@
 # week11-web-programming-vue
 
-VueJS
+Vue 3 Components
 
 <h1>WEB PROGRAMMING</h1>
 
-<h2>Week 11 Labs: Vue Components</h2>
+<h2>Week 11 Labs: Vue 3 Components</h2>
 
 <ul>
   <li>JS Practice: </li>
