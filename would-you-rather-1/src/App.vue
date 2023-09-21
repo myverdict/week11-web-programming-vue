@@ -1,47 +1,69 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
-
+<!-- this is the parent component of the WouldYouRather.vue -->
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+  <div id="app">
+    <h1>Would you rather...</h1>
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
+    <!-- this is being replaced by the WouldYouRather.vue template -->
+    <!-- a vue component can have dashes, an html element does not have dashes -->
+    <!-- the question, answer1, answer2 are from the props of the child WouldYouRather.vue -->
+    <!-- the wyrQuestion, wyrAnswer1, wyrAnswer2 are from the data of the parent App.vue -->
+    <!-- the answer-changed is from the choiceMade method of the child WouldYouRather.vue -->
+    <!-- the answerChanged method is from the parent App.vue -->
+    <would-you-rather
+      v-bind:question="wyrQuestion"
+      v-bind:answer1="wyrAnswer1"
+      v-bind:answer2="wyrAnswer2"
+      v-on:answer-changed="answerChanged"
+    >
+      <!-- this is from the event changed in the radio buttons -->
+    </would-you-rather>
 
-  <main>
-    <TheWelcome />
-  </main>
+    <!-- alternate way of writing the above tags/elements -->
+    <!-- <WouldYouRather></WouldYouRather> -->
+
+    <p>{{ userSelectionMessage }}</p>
+  </div>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
+<script>
+import WouldYouRather from "./components/WouldYouRather.vue";
+
+export default {
+  // register the child components
+  components: {
+    WouldYouRather,
+  },
+  // declare reactive state using data
+  data() {
+    return {
+      wyrQuestion:
+        "Would you rather have a magic carpet that flies or a see-through submarine?",
+      wyrAnswer1: "Magic carpet that flies",
+      wyrAnswer2: "See-through submarine",
+      userSelectionMessage: "",
+    };
+  },
+  methods: {
+    answerChanged(choice) {
+      this.userSelectionMessage = `Thanks! you chose ${choice}`;
+    },
+  },
+};
+</script>
+
+<style>
+body {
+  background-color: lightseagreen;
 }
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+  background-color: teal;
+  color: white;
+  padding: 20px;
 }
 </style>
