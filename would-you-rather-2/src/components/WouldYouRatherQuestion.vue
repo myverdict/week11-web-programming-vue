@@ -40,9 +40,9 @@ export default {
     };
   },
   methods: {
-    // create a choiceMade method here
     choiceMade() {
-      this.$emit("answer-changed", this.choice);
+      // send an event to the parent App.vue about the choice made and the question id
+      this.$emit("answer-changed", this.choice, this.id);
     },
   },
 };

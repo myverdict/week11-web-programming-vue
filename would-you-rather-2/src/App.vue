@@ -20,8 +20,8 @@
       ... ? Try making a selection above
     </span>
 
-    <ul>
-      <li v-if="choice" v-for="choice in userChoice">{{ choice }}</li>
+    <ul v-if="userChoice">
+      <li v-for="choice in userChoice">{{ choice }}</li>
     </ul>
   </div>
 </template>
