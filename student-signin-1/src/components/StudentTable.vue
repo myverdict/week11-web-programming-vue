@@ -24,7 +24,7 @@
               <td>
                 <input
                   type="checkbox"
-                  id="arrivedOrLeft"
+                  name="arrivedOrLeft"
                   v-on:change="arrivedOrLeft(student, $event.target.checked)"
                 />
               </td>
