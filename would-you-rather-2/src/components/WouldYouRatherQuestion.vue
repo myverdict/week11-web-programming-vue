@@ -8,19 +8,23 @@
     <!-- creating radio buttons for the answers -->
     <input
       type="radio"
+      :name="question"
+      :id="answer1"
       v-model="choice"
       v-bind:value="answer1"
       v-on:change="choiceMade"
     />
-    <label>{{ answer1 }}</label>
+    <label :for="answer1">{{ answer1 }}</label>
 
     <input
       type="radio"
+      :name="question"
+      :id="answer2"
       v-model="choice"
       v-bind:value="answer2"
       v-on:change="choiceMade"
     />
-    <label>{{ answer2 }}</label>
+    <label :for="answer2">{{ answer2 }}</label>
   </div>
 </template>
 

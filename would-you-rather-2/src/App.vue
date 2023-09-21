@@ -69,7 +69,7 @@ export default {
   methods: {
     answerChanged(choice, id) {
       this.userChoice[id] = choice;
-      console.log(this.userChoice);
+      console.log(this.userChoice); // debug
     },
   },
 };
