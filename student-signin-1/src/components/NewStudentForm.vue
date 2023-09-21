@@ -27,10 +27,14 @@
         />
       </div>
 
+      <br />
+
       <div class="form-group">
         <label for="starID">Star ID</label>
         <input id="starID" class="form-control" v-model.trim="newStarID" />
       </div>
+
+      <br />
 
       <button class="btn btn-primary" v-on:click="addStudent">Add</button>
     </div>
