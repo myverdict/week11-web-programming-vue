@@ -7,6 +7,11 @@ VueJS
 <h2>Week 11 Labs: VueJS</h2>
 
 <ul>
+  <li>JS Practice: </li>
+    <ul>
+      <li>Maps & Filters</li>
+      <li>Maps & Filters with console logs</li>
+    </ul>
   <li>Would You Rather 1 (Vue 3: Options API)</li>
   <li>Would You Rather 2 (Vue 3: Options API)</li>
   <li>Student Sign-In 1 (Vue 3: Options API)</li>
