@@ -20,8 +20,12 @@
       ... ? Try making a selection above
     </span>
 
-    <ul v-if="userChoice">
-      <li v-for="choice in userChoice">{{ choice }}</li>
+    <ul v-else>
+      <div v-for="choice in userChoice">
+        <li v-if="choice">
+          {{ choice }}
+        </li>
+      </div>
     </ul>
   </div>
 </template>
@@ -65,6 +69,7 @@ export default {
   methods: {
     answerChanged(choice, id) {
       this.userChoice[id] = choice;
+      console.log(this.userChoice);
     },
   },
 };

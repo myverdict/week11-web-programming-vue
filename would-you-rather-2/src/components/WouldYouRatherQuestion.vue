@@ -39,6 +39,7 @@ export default {
       choice: "",
     };
   },
+  emits: ["answer-changed"],
   methods: {
     choiceMade() {
       // send an event to the parent App.vue about the choice made and the question id
