@@ -19,10 +19,26 @@ Vue 3 Components
   <li>Student Sign-In 2 (Vue 3: Options API)</li>
   <li>Lab 10 repositories: </li>
     <ul>
-      <li>[Would You Rather 1 (Vue 2)](https://github.com/myverdict/ITEC-lab10-wyr1-vue-components)</li>
-      <li>[Would You Rather 2 (Vue 2)](https://github.com/myverdict/ITEC-lab10-wyr2-vue-components)</li>
-      <li>[Student Sign-In 1 (Vue 2)](https://github.com/myverdict/ITEC-lab10-student-sign-in1)</li>
-      <li>[Student Sign-In 2 (Vue 2)](https://github.com/myverdict/ITEC-lab10-student-sign-in2)</li>
+      <li>
+        <a href="https://github.com/myverdict/ITEC-lab10-wyr1-vue-components">
+          Would You Rather 1 (Vue 2)
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/myverdict/ITEC-lab10-wyr2-vue-components">
+          Would You Rather 2 (Vue 2)
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/myverdict/ITEC-lab10-student-sign-in1">
+          Student Sign-In 1 (Vue 2)
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/myverdict/ITEC-lab10-student-sign-in2">
+          Student Sign-In 2 (Vue 2)
+        </a>
+      </li>
     </ul>
 </ul>
 
